@@ -1,0 +1,5 @@
+b:�b�?%�/indexSolutionInfo_SolutionNameSolutionInfoCREATE UNIQUE INDEX "SolutionInfo_SolutionName" on "SolutionInfo"("SolutionName")P++Ytablesqlite_sequencesqlite_sequenceCREATE TABLE sqlite_sequence(name,seq)�C%%�ItableSolutionInfoSolutionInfoCREATE TABLE "SolutionInfo" (
+"Id" integer primary key autoincrement not null ,
+"SolutionName" varchar ,
+"CurrentProject" varchar ,
+"StartupProject" varchar )
