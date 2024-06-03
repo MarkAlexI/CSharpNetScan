@@ -7,6 +7,38 @@
 		<VerticalStackLayout
 		Padding="20,0"
 		Spacing="10">
-		<Label x:Name="lbl" Text="Hello, World!" />
+		<ContentPage.Resources>
+			<Color
+				x:Key="MainLabelTextColor">Orange</Color>
+		</ContentPage.Resources>
+		<Label
+			x:Name="lbl_1"
+			Text="Net in .NET"
+			FontAttributes="Bold"
+			TextColor="{DynamicResource MainLabelTextColor}"
+			FontSize="44" />
+		<Label
+			x:Name="lbl_2"
+			Padding="20,0"
+			Text="MAUI in action"
+			TextColor="Aqua"
+			FontSize="40"
+			TextDecorations="Underline"
+			Rotation="-5" />
+		<Entry
+			x:Name="entry"
+			MaxLength="50"
+			ClearButtonVisibility="WhileEditing"
+			Keyboard="Url"
+			ReturnType="Go"
+			Text=""
+			Placeholder="Enter url" />
+		<Label
+			x:Name="lbl_Input"
+			Text="Write your source url"
+			TextColor="White" />
+		<Button
+		    x:Name="url_Button"
+			Text="Push the button" />
 	</VerticalStackLayout>
 </ContentPage>
